@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+ 
+<body> 
+
+<div class="wrapper">
+  <header class="header"><h1>Homework_20</h1>
+  <p>Завдання з загального списку задач (документ “задачі”)</p>
+  </header>
+
+<!-- task02 -->
+<div class="main-container">
+<h2>Task_02</h2>
+<p>Розробити Loader (задається title, value). Зімітувати завантаження за допомогою таймера</p>
+    <div class="loader-container">
+      <div id="loader1-container"></div>
+      <div id="loader2-container"></div>
+    <div class="buttons-wrapper">
+      <button id="start-btn">Start</button>
+      <button id="reset-btn">Reset</button>
+    </div> 
+  </div>
+</div>
+
+
+<!-- task_04 -->
+<div class="login-container">
+<h2>Task_04</h2> 
+<p>Розробити форму для введення логіна і пароля</p> 
+  <div class="login-box">
+    <h1>Вхід</h1>
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="login">Логін</label>
+          <input 
+            type="text" 
+            id="login" 
+            placeholder="Введіть логін"
+            required
+          >
+        <span class="error" id="loginError"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <div class="password-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              placeholder="Введіть пароль"
+              required
+            >
+            <button type="button" id="togglePassword" class="toggle-btn"></button>
+          </div>
+        <span class="error" id="passwordError"></span>
+        </div>
+        <button type="submit" class="btn-login">Увійти</button>
+      </form>
+        <div class="success" id="successMessage" style="display: none;">
+          ✓ Вхід успішний!
+        </div>
+      </div>
+  </div>
+
+<!-- task_05 -->
+<div class="shop-container">
+<h2>Task_05</h2> 
+<p>Дано перелік товарів у кошику. При зміні кількості одиниць товару збільшувати загальну 
+    вартість. Створити клас Product, що призначений для маніпуляцій товаром та клас ProductManager
+    що оперує з усіма товарами (через подію передвати ідентифікатор товару та операцію, що зроблена)</p> 
+  <div id="cart">
+    <div class="product" data-id="1">
+      <span class="name">Миша Logitech B100</span>
+      <button class="decrement" aria-label="Зменшити кількість">−</button>
+      <span class="quantity" id="quantity-1">1</span>
+      <button class="increment" aria-label="Збільшити кількість">+</button>
+      <span class="total-price" id="total-1">2500 грн</span>
+      <button class="remove" aria-label="Видалити товар">×</button>
+    </div>
+
+    <div class="product" data-id="2">
+      <span class="name">Телевізор Hisense 55A63H</span>
+      <button class="decrement" aria-label="Зменшити кількість">−</button>
+      <span class="quantity" id="quantity-2">2</span>
+      <button class="increment" aria-label="Збільшити кількість">+</button>
+      <span class="total-price" id="total-2">32500 грн</span>
+      <button class="remove" aria-label="Видалити товар">×</button>
+    </div>
+
+    <div class="product" data-id="3">
+      <span class="name">Ігрова поверхня Razer</span>
+      <button class="decrement" aria-label="Зменшити кількість">−</button>
+      <span class="quantity" id="quantity-3">1</span>
+      <button class="increment" aria-label="Збільшити кількість">+</button>
+      <span class="total-price" id="total-3">500 грн</span>
+      <button class="remove" aria-label="Видалити товар">×</button>
+    </div>
+  </div>
+<h3>Загалом до оплати: <span id="total-price">35500 грн</span></h3>
+</div>
+
+  </div>
+    <script>console.log('Homework_20')</script>
+ 
+    <script src="js/script.js"></script>
+  </body>  
+</html>

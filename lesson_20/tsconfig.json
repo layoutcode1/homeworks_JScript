@@ -1,0 +1,82 @@
+// {
+//   // Visit https://aka.ms/tsconfig to read more about this file
+//   "compilerOptions": {
+//     // File Layout
+//     // "rootDir": "./src",
+//     // "outDir": "./dist",
+
+//     // Environment Settings
+//     // See also https://aka.ms/tsconfig/module
+//     "module": "nodenext",
+//     "target": "esnext",
+//     "types": [],
+//     // For nodejs:
+//     // "lib": ["esnext"],
+//     // "types": ["node"],
+//     // and npm install -D @types/node
+
+//     // Other Outputs
+//     "sourceMap": true,
+//     "declaration": true,
+//     "declarationMap": true,
+
+//     // Stricter Typechecking Options
+//     "noUncheckedIndexedAccess": true,
+//     "exactOptionalPropertyTypes": true,
+
+//     // Style Options
+//     // "noImplicitReturns": true,
+//     // "noImplicitOverride": true,
+//     // "noUnusedLocals": true,
+//     // "noUnusedParameters": true,
+//     // "noFallthroughCasesInSwitch": true,
+//     // "noPropertyAccessFromIndexSignature": true,
+
+//     // Recommended Options
+//     "strict": true,
+//     "jsx": "react-jsx",
+//     "verbatimModuleSyntax": true,
+//     "isolatedModules": true,
+//     "noUncheckedSideEffectImports": true,
+//     "moduleDetection": "force",
+//     "skipLibCheck": true,
+//   }
+// }
+
+
+
+// ---------------------------------------------
+{
+  "compilerOptions": {
+    // цільова версія JS
+    "target": "es2023",
+    "lib": ["es2023", "dom"],
+    
+    // система модулів
+    "module": "commonjs",
+    
+    // строгі перевірки типів
+    "strict": true,
+    
+    // підтримка взаємодії з ES-модулями
+    "esModuleInterop": true,
+
+    // заборонити файли з різною регістровою назвою
+    "forceConsistentCasingInFileNames": true,
+    
+    // директорія для JS файлів
+    "outDir": "./js",
+
+    // директорія TS файлів
+    "rootDir": "./src",
+
+    // пропуск перевірки типів у бібліотеках
+    "skipLibCheck": true
+  },
+  
+  // включити всі файли з src
+  "include": ["src/**/*"],
+  
+  // виключити node_modules та dist
+  "exclude": ["node_modules", "dist"]
+}
