@@ -1,0 +1,385 @@
+body{
+  max-width: 100%;
+  background-color:#394664;
+  color: #83b3fc;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-family: Oxygen, "Open Sans", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  margin: 20px auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+.wrapper{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}  
+
+div p{color: #85b0f1;}
+p{color: #72d2ffe8;}
+h1{text-align: center;}
+h2{color:#297efdce;}
+h3{
+  color:#79e9e3ce;
+  font-weight: normal;
+}
+
+input{
+  padding: 8px;
+  background-color: #13457e;
+  border: 1px solid #2760a1;
+  border-radius: 4px;
+  outline: none;
+  color: #86c4acda;
+  text-align: center;
+}
+button {
+  padding: 8px 16px;
+  background-color:  #13457e;
+  color: #cfb6ff8f;
+  border: 1px solid #2760a1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1953daa4;
+}
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}
+
+
+/* TASK_01_Session Timer */
+#timer{
+  padding: 15px;
+  background-color: #13457e;
+  border-left: 25px solid #347ec9ef; 
+  border-radius: 4px;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+#timer span {
+  display: block;
+  color: #86c4acda;
+  font-size: 24px;
+}
+
+
+/* TASK_02_Procedure Time Checker */
+#check-result {
+  margin-top: 20px;
+}
+#check-result.active {
+  color: #179599ef;
+}
+#check-result.finished {
+  color: #cd7070;
+}
+#procedureTimeLeft{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+/* TASK_03_Work Day Timer */ 
+#workTimeInfo {
+  padding: 15px;
+  background-color: #13457e;
+  border-left: 25px solid #347ec9ef; 
+  border-radius: 4px;
+  max-width: 300px;
+  margin-bottom: 20px;
+} 
+.current-time {
+  color: #179599ef;
+}
+
+        
+/* TASK_04_Current Week Checker */
+.input-group {
+  margin: 20px 0 20px; 
+}
+.input-group #timeInput{
+  padding: 7px;
+  color: #86c4acda;
+}
+.input-group #dateInput {
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 180px;
+  color: #86c4acda;
+}
+.input-group button {
+  margin-top: 5px;
+  min-width: 120px;
+}
+.yes {
+  color: #179599ef;
+}
+.no {
+  color: #cd7070;
+}
+.week-info { 
+  margin-top: 1px;
+  font-size: 14px;
+  padding: 10px; 
+}  
+
+
+/* TASK_05_Work Day Greeting */
+.greeting-container{
+  margin-bottom: 40px;
+}
+.greeting-box {
+  padding: 15px;
+  background-color: #13457e;
+  border-left: 25px solid #347ec9ef;
+  border-radius: 4px;
+  max-width: 300px;
+}
+.greeting-box #greeting::first-line {
+  color: #86c4acda;
+}
+.greeting-footer {
+  max-width: 300px;
+  margin-top: 10px;
+}
+.greeting-footer #startInfo {
+  font-size: 14px;
+}
+.greeting-footer #timeDisplayDivision {
+  color: #179599ef;
+}
+
+
+/* TASK_06_City Times */
+.capitals-container{
+  margin-bottom: 40px;
+}
+#cities {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.city-card {
+  flex: 0 1 auto;
+  min-width: 150px;
+  padding: 15px;
+  border: 1px solid #227791;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+/* TASK_07_Oldest Student Finder */
+.list-container{
+  margin-bottom: 40px;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-field label {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.input-field textarea {
+  max-width: 100%;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 18px;
+  border: 1px solid #85b0f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: transparent;
+  color: #85b0f1;
+}
+.input-field textarea:focus {
+  border-color: #687df5;
+}
+#students::placeholder{
+  color:#7888e0e5;
+}
+.finder-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+}
+.input-field button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #85b0f1;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #85b0f1;
+  font-size: 14px;
+  white-space: nowrap;
+  min-width: 80px;
+  flex: 1;
+} 
+.input-field button:hover {
+  background-color: #85b0f11a;
+}
+#search-result {
+  max-width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #8bb0f11a;
+  border-top: 1px solid #85b0f1;
+  border-radius: 4px;
+  display: none;
+  text-align: center;
+}
+.student-info {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4391f7;
+  margin-bottom: 10px;
+}
+.age-info {
+  color: #85b0f1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* TASK_08_Mouse Move Detection */
+.session-container{
+  margin-bottom: 40px;
+}
+
+
+/* TASK_09_Maternity Leave Tracker */
+.tracker-container{
+  margin-bottom: 40px;
+}
+.input-part #startDate{
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 180px;
+  color: #86c4acda;
+}
+#maternityLeaveTracker {
+  max-width: 300px;
+  margin-top: 15px;
+  padding: 15px;
+  display: none;
+  border-radius: 3px;
+  background-color: #3690f72a;
+  border-left: 2px solid #4588caef;  
+}
+.not-started {
+  color: #d8c454de;
+}
+.ongoing {
+  color: #179599ef;
+}
+.finished {
+  color: #cd7070;
+}
+.trackerDetails{
+  font-size: 14px;
+  margin-top: 10px;
+  color: #83b3fc;
+}
+
+
+/* TASK_10_Yogurt Expiry Checker */
+.suitability-container {
+  margin-bottom: 40px;
+}
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+.form-labels-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+.form-labels-row label {
+  font-size: 14px;
+}
+.form-inputs-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.form-row {
+  display: contents;
+}
+.form-row input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #2760a1;
+  border-radius: 4px;
+  text-align: center;
+}
+.input-area button {
+  margin-top: 20px;
+  align-self: center;
+  width: fit-content;
+}
+#expiryChecker {
+  margin-top: 15px;
+  padding: 15px;
+  border-left: 2px solid #4588caef;
+  background-color: #3690f72a;
+  border-radius: 3px;
+  display: none;
+  max-width: 470px;
+  text-align: center;
+}
+#expiryChecker.good {
+  color: #179599ef;
+}
+#expiryChecker.expiring-soon {
+  color: #d8c454de;
+}
+#expiryChecker.expired {
+  color: #cd7070;
+}
+.details {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #83b3fc;
+} 
+@media (max-width: 480px) {
+  .form-labels-row{
+    font-size: 12px;
+  }
+}
+
+
+/* TASK_12_Sorting Algorithm Comparison */
+.sort-container{
+  max-width: 600px;
+}
+.button-box {
+  display: flex;
+  gap: 16px;
+  padding: 10px;
+  margin-right: 10px; 
+}
+.button-box button{ 
+  padding: 10px 20px; 
+  color: #86c4acda; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}

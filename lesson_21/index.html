@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+ 
+<body> 
+
+<div class="wrapper">
+  <header class="header"><h1>Homework_21</h1></header>
+
+
+<!-- Task 1_Session Timer  -->
+<div class="timer-container">
+<h2>Task_01</h2> 
+<h3>Виводити на екран скільки хвилин користувач вже на сайті</h3>
+   <div id="timer">Завантаження...</div>
+</div>
+
+
+<!-- Task 2_Procedure Time Check -->
+<div class="procedure-container">
+  <h2>Task_02</h2> 
+  <h3>Вводимо час початку процедури (процедура триває 30хв). Визначити, чи процедура ще триває</h3>
+<div class="input-section">
+    <label for="procedureStartTime">Введіть час початку процедури (формат ГГ:ХХ)</label><br><br>
+    <input 
+      type="text" 
+      id="procedureStartTime" 
+      placeholder="Наприклад: 14:30"
+      autocomplete="off">
+    <button onclick="checkProcedure()">Перевірити</button>
+    </div> 
+    <div id="check-result"></div>
+    <div id="procedureTimeLeft"></div>
+</div>
+
+
+<!-- Task 3_Work Day Timer -->
+<div class="work-container">
+<h2>Task_03</h2>  
+<h3>Визначити скільки залишилось до кінця робочого дня (до 17.00)</h3>
+    <div id="workTimeInfo">Завантаження...</div>
+    <div class="current-time" id="workCurrentTime"></div>
+</div>
+
+
+<!-- Task 4_Current Week Checker -->
+<div class="week-container">
+<h2>Task_04</h2> 
+<h3>Створити функцію, яка дозволяє визначити, чи знаходиться вказана дата і час у межах 
+    поточного тижня (від понеділка 0 год., 0 хв., до неділі 23 год. 59 хв.)</h3>
+  <p>Введіть дату та час</p>
+  <div class="input-group">
+    <label for="dateInput"></label>
+    <input type="date" id="dateInput">
+    <label for="timeInput"></label>
+    <input type="time" id="timeInput">
+    <button onclick="checkIfInWeek()">Перевірити</button>
+  </div>
+
+  <div id="week-result"></div>
+  <div class="week-info" id="currentWeekInfo"></div>
+</div>
+    
+    
+<!-- Task 5_Work Day Greeting -->
+<div class="greeting-container">
+  <h2>Task_05</h2>
+  <h3>При заході на сайт вітати користувача або відображати
+    повідомлення про те, скільки хвилин залишилось до початку робочого дня (початок о 8.00)</h3>
+
+  <div class="greeting-box">
+    <div id="greeting">Завантаження...</div>
+    <div id="status"></div>
+  </div>
+
+  <div class="greeting-footer">
+    <div id="startInfo"></div>
+    <div id="timeDisplayDivision"></div>
+  </div>
+</div>
+
+
+<!-- Task 6_City Times -->
+<div class="capitals-container">
+<h2>Task_06</h2> 
+<h3>Вивести скільки зараз годин у Лондоні, Парижі, Сіднеї</h3>
+    <div class="cities" id="cities"></div>
+</div>
+    
+    
+<!-- Task 7_Oldest Student Finder -->
+<div class="list-container">
+<h2>Task_07</h2> 
+<h3>Дано список студентів (ім’я і дата народження: у формі тексту (день.місяць.рік). 
+    Знайти найстаршого студента)</h3>
+    <div class="input-field">
+       <label for="students">Введіть в поле список студентів</label>
+       <textarea id="students" placeholder="Формат: Ім'я день.місяць.рік&#10;Приклад:&#10;Галина 15.03.2001&#10;Марія 22.07.1999&#10;Матвій 10.11.1996"></textarea>
+       <div class="finder-section">
+       <button onclick="findOldestStudent()">Пошук</button>
+       <button onclick="resetForm()">Очистити</button>
+       </div>
+    </div>
+    <div id="search-result"></div>
+</div>
+    
+    
+<!-- Task 8_Mouse Move Detection -->
+<div class="session-container">
+<h2>Task_08</h2> 
+<h3>Визначити скільки пройшло секунд після заходу на сайт перш ніж користувач зробив рух мишкою</h3>
+    <div id="info-box">
+        <div class="time-display" id="mouseTimeDisplay">0.00 сек</div>
+        <div class="status" id="mouseStatus">Чекаємо на рух мишкою...</div>
+    </div>
+</div>
+
+    
+<!-- Task 9_Maternity Leave Tracker -->
+<div class="tracker-container">
+<h2>Task_09</h2> 
+<h3>Користувачка планувала оформила дектретну відпустку на 200 днів (дата початку відпустки вводиться). 
+    Визначити чи відпустка вже триває і чи не закінчилась</h3>
+    <div class="input-part">
+        <label for="startDate">Введіть дату початку відпустки</label><br><br>
+        <input type="date" id="startDate">
+        <button onclick="checkMaternityLeave()">Перевірити</button>
+    </div>
+    <div id="maternityLeaveTracker"></div>
+</div>   
+
+
+<!-- TASK_10_Yogurt Expiry Checker -->
+<div class="suitability-container">
+  <h2>Task_10</h2>
+  <h3>Дано дата виробництва йогурта (вводимо рік, місяць, день) та кількість днів придатності. 
+    Визначити чи є він придатним на даний момент</h3>
+  
+  <div class="input-area">
+    <div class="form-labels-row">
+      <label for="year" >Рік виробництва</label>
+      <label for="month">Місяць виробництва</label>
+      <label for="day">День виробництва</label>
+      <label for="shelfLife">Кількість днів придатності</label>
+    </div>
+    <div class="form-inputs-row">
+      <input type="number" id="year" min="2000" max="2099" placeholder="2024">
+      <input type="number" id="month" min="1" max="12" placeholder="1-12">
+      <input type="number" id="day" min="1" max="31" placeholder="1-31">
+      <input type="number" id="shelfLife" min="1" max="14" placeholder="7">
+    </div>
+
+    <button onclick="checkYogurtExpiry()">Перевірити</button>
+  </div>
+
+  <div id="expiryChecker"></div>
+</div>
+
+
+<!-- Task 12_Sorting Algorithm Comparison -->
+<div class="sort-container">
+<h2> Task_12</h2>
+<h3>Сформувати масив з 1000 елементів від 1 до 800. Порівняти час сортування бульбашкою і  вставкою</h3>
+    <div class="button-box">
+       <button id="bubbleBtn">Bubble</button>
+       <button id="insertionBtn">Insertion</button>
+       <button id="resetBtn">Reset</button>
+    </div>
+    <div id="arrayContainer"></div>
+    <div id="sortInfo" style="margin-top: 1px;">
+       <p>Кількість проходів: <span id="passes">0</span></p>
+       <p>Час сортування: <span id="time">0</span> мс</p>
+    </div>
+</div>
+
+        </div>
+           <script>console.log('Homework_21')</script>
+           <script src="js/script.js"></script>
+    </body>  
+</html>
+
+
