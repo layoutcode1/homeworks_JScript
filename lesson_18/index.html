@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+ 
+<body> 
+
+<div class="wrapper">
+  <header class="header"><h1>Homework_18</h1></header>
+
+<main class="page active">
+  <div class="calculator_container">
+  <h2>Calculator</h2> 
+<label> <input type="number" id="firstNumber" value=""></label><br>
+<label> <input type="number" id="secondNumber" value=""></label><br>
+
+<button id="add"></button>
+<button id="subtract"></button>
+<button id="multiply"></button>
+<button id="divide"></button><br>
+
+<label> <input type="text" id="result" value="0" readonly></label>
+<button id="reset">reset</button>
+
+</div>
+
+
+<!-- Task_05 -->
+<h2>Random number table </h2> 
+<div class="container" id="table-container"></div>
+
+
+<!-- Task_07 -->
+<h2>Travel calculator</h2>
+<form id="travelForm">
+  <div class="stage" id="stage1">
+    <h3>Етап 1</h3>
+    <label>Транспорт
+      <select name="transport1" class="transport">
+        <option value="auto">Авто</option>
+        <option value="bus">Автобус</option>
+        <option value="plane">Літак</option>
+      </select>
+    </label>
+    <fieldset>
+      <legend>Харчування</legend>
+      <label><input type="checkbox" name="food1" value="breakfast"> Сніданок</label>
+      <label><input type="checkbox" name="food1" value="lunch"> Обід</label>
+      <label><input type="checkbox" name="food1" value="dinner"> Вечеря</label>
+    </fieldset>
+    <fieldset>
+      <legend>Гід</legend>
+      <label><input type="radio" name="guide1" value="guide1" checked> Гід 1</label>
+      <label><input type="radio" name="guide1" value="guide2"> Гід 2</label>
+      <label><input type="radio" name="guide1" value="guide3"> Гід 3</label>
+    </fieldset>
+  </div>
+
+  <div class="stage" id="stage2">
+    <h3>Етап 2</h3>
+    <label>Транспорт
+      <select name="transport2" class="transport">
+        <option value="auto">Авто</option>
+        <option value="bus">Автобус</option>
+        <option value="plane">Літак</option>
+      </select>
+    </label>
+    <fieldset>
+      <legend>Харчування</legend>
+      <label><input type="checkbox" name="food2" value="breakfast"> Сніданок</label>
+      <label><input type="checkbox" name="food2" value="lunch"> Обід</label>
+      <label><input type="checkbox" name="food2" value="dinner"> Вечеря</label>
+    </fieldset>
+    <fieldset>
+      <legend>Гід</legend>
+      <label><input type="radio" name="guide2" value="guide1" checked> Гід 1</label>
+      <label><input type="radio" name="guide2" value="guide2"> Гід 2</label>
+      <label><input type="radio" name="guide2" value="guide3"> Гід 3</label>
+    </fieldset>
+  </div>
+
+  <div class="stage" id="stage3">
+    <h3>Етап 3</h3>
+    <label>Транспорт
+      <select name="transport3" class="transport">
+        <option value="auto">Авто</option>
+        <option value="bus">Автобус</option>
+        <option value="plane">Літак</option>
+      </select>
+    </label>
+    <fieldset>
+      <legend>Харчування</legend>
+      <label><input type="checkbox" name="food3" value="breakfast"> Сніданок</label>
+      <label><input type="checkbox" name="food3" value="lunch"> Обід</label>
+      <label><input type="checkbox" name="food3" value="dinner"> Вечеря</label>
+    </fieldset>
+    <fieldset>
+      <legend>Гід</legend>
+      <label><input type="radio" name="guide3" value="guide1" checked> Гід 1</label>
+      <label><input type="radio" name="guide3" value="guide2"> Гід 2</label>
+      <label><input type="radio" name="guide3" value="guide3"> Гід 3</label>
+    </fieldset>
+  </div>
+<button type="button" id="calculateBtn">Порахувати вартість</button>
+    </form>
+  <p>Загальна вартість: <span id="totalCost">0</span> грн</p>
+
+    </main>
+  </div>
+  <script>console.log('Homework_18')</script>
+  <script src="js/script.js"></script>
+</body>  
+
+
