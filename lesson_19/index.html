@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+ 
+<body> 
+
+<div class="wrapper">
+  <header class="header"><h1>Homework_19</h1></header>
+
+<!-- task_05 -->
+<div class="shop-container">
+<h2>Task_05</h2> 
+<p> Відображаємо картки товарів, які користувач може вибирати. Вибраний товар має зелену рамку 
+    (при кліку робити toogle з класом вибраного елемента)</p> 
+    <section class="products" id="products">
+      <article class="product-card">
+        <img src="img/card_01.png" alt="personal computer1">
+        <p>Ноутбук Acer Aspire 7 A715-42G-R3EZ</p>
+        <span class="price">30 999 ₴</span>
+      </article>
+
+      <article class="product-card">
+        <img src="img/card_02.png" alt="personal computer2">
+        <p>Ноутбук ASUS Laptop X515EA-BQ2066</p>
+        <span class="price">19 999 ₴</span>
+      </article>
+
+      <article class="product-card">
+        <img src="img/card_03.png" alt="personal computer3">
+       <p>Ноутбук Lenovo IdeaPad 115ADA7</p>
+        <span class="price">13 999 ₴</span>
+      </article>
+
+      <article class="product-card">
+        <img src="img/card_04.png" alt="personal computer4">
+       <p>Ноутбук Apple MacBook Air 13" M1</p>
+        <span class="price">39 999 ₴</span>
+      </article>
+    </section>
+  </div>
+
+
+<!-- tas_06 -->
+<div class="list-container">
+<h2>Task_06</h2> 
+<p>Дано список спортсменів. Потрібно сформувати список тих, які будуть брати участь у змаганні. 
+  При цьому є два стовпці. В одному відображені всі спортсмени, в іншому – список тих, хто був вибраний. 
+  При натисканні на зелену стрілку спортсмен переміщається у список для змагань. 
+  При натисканні на червону стрілку спортсмен переміщається у загальний список</p>
+    <div class="lists">
+      <div class="list-block">
+        <h2>Усі спортсмени</h2>
+        <ul id="allAthletes"></ul>
+      </div>
+
+      <div class="list-block">
+        <h2>Учасники змагань</h2>
+        <ul id="selectedAthletes"></ul>
+      </div>
+    </div>
+  </div>
+
+
+<!-- tas_07 -->
+<div id="snow-container">
+  <div id="snowflake">❄</div>
+    <h2>Task_07</h2> 
+      <P>Відобразити падаючий сніг. Сніжинка з’являється у верхній частині екрану (top =0) і з випадковою 
+        швидкістю рухається вниз (у setInterval викликати метод, у якому додавати крок до top). 
+        Як тільки сніжинка досягає нижньої частини екрану (top>maxTop) вона знову повинна з’явитись у верхній частині екрану (top=0)</P>
+</div>
+
+    <script>console.log('Homework_19')</script>
+    </div>
+  <script src="js/script.js"></script>
+</body>  
+
+
