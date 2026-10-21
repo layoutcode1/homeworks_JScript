@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    // цільова версія JS
+    "target": "es2023",
+    "lib": ["es2023", "dom"],
+  
+    // система модулів
+    "module": "commonjs",
+    
+    // строгі перевірки типів
+    "strict": true,
+    
+    // підтримка взаємодії з ES-модулями
+    "esModuleInterop": true,
+
+    // заборонити файли з різною регістровою назвою
+    "forceConsistentCasingInFileNames": true,
+    
+    // директорія для JS файлів
+    "outDir": "./js",
+
+    // директорія TS файлів
+    "rootDir": "./src",
+
+    // пропуск перевірки типів у бібліотеках
+    "skipLibCheck": true
+  },
+  
+  // включити всі файли з src
+  "include": ["src/**/*"],
+  
+  // виключити node_modules та dist
+  "exclude": ["node_modules", "dist"]
+}
